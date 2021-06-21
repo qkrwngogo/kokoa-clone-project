@@ -1,6 +1,7 @@
 #chat-screen {
   background-color: #abc1d1;
-  height: 1100vh;
+  margin: 30px 0;
+  height: 100%;
 }
 #chat-screen .status-bar {
   z-index: 2;
@@ -61,6 +62,11 @@
   border-top-left-radius: 0;
   margin-right: 5px;
   font-size: 20px;
+}
+.message__bubble img {
+  width: 200px;
+  height: 200px;
+  margin: 0;
 }
 .message__author,
 .message__time {

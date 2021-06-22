@@ -16,6 +16,9 @@
   font-weight: 700;
   font-size: 13px;
 }
+.more-screen {
+  padding-bottom: 150px;
+}
 .more-screen .icon-row {
   margin: 35px 0;
 }

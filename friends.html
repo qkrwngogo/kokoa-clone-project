@@ -22,12 +22,15 @@
         <i class="fas fa-bolt"></i>
       </div>
     </div>
+
     <header class="screen-header">
       <h1 class="screen-header__title">Friends</h1>
       <div class="screen-header__icons">
         <span><i class="fas fa-search fa-lg"></i></span>
         <span><i class="fas fa-music fa-lg"></i></span>
-        <span><a href="settings.html"><i class="fas fa-cog fa-lg"></i></a></span>
+        <span
+          ><a href="settings.html"><i class="fas fa-cog fa-lg"></i></a
+        ></span>
       </div>
     </header>
     <a id="friends-display-link" href="#">
@@ -35,20 +38,65 @@
       <i class="fas fa-chevron-right fa-xs"></i>
     </a>
     <main class="friends-screen">
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            src="imgs/steven.jpg"
-            alt=""
-            class="user-component__avatar user-component__avatar--xl"
-          />
-          <div class="user-component__text">
-            <h4 class="user-component__title">Steven</h4>
-            <!-- <h6 class="user-component__subtitle">hello world</h6> -->
+      <div class="modal">
+          <div class="user-component">
+            <div class="user-component__column">
+              <img
+                src="imgs/steven.jpg"
+                alt=""
+                class="user-component__avatar user-component__avatar--xl"
+              />
+              <div class="user-component__text">
+                <h4 class="user-component__title">Steven</h4>
+                <!-- <h6 class="user-component__subtitle">hello world</h6> -->
+              </div>
+            </div>
+            <div class="user-component__column"></div>
+          </div>
+            <input class="modal__toggle" type="checkbox" id="steven"/>
+            <div class="modal__backdrop">
+              <div class="modal__content">
+                <label class="modal__close" for="steven"><i class="fas fa-times"></i></label>
+                <div class="modal__profile">
+                  <img class="modal__photo" src="imgs/steven.jpg" alt="" />
+                  <span class="modal__title">Steven</span>
+                  <span class="modal__subtitle">Steven</span>
+                  <div class="modal__columns"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div class="user-component__column"></div>
+      <!-- Friends with Birthdays -->
+      <div class="friends-screen-row">
+        <div class="friends-screen-row__header">
+          <span>Friends with Birthdays</span>
+          <i class="fas fa-chevron-up fa-xs"></i>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <div
+              class="
+                user-component__avatar user-component__avatar--default
+                friends-screen__birthdays
+              "
+            >
+              <i class="fas fa-birthday-cake fa-2x"></i>
+            </div>
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                View more birthdays
+              </h4>
+              <!-- <h6 class="user-component__subtitle">hello world</h6> -->
+            </div>
+          </div>
+          <div class="user-component__column">
+            <div>
+              <span>2</span>
+              <i class="fas fa-chevron-right fa-xs"></i>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- Channel -->
       <div class="friends-screen-row">
@@ -84,104 +132,184 @@
           <span>Friends</span>
           <i class="fas fa-chevron-up fa-xs"></i>
         </div>
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              src="imgs/bob.jpg"
-              alt=""
-              class="user-component__avatar user-component__avatar--sm"
-            />
-            <div class="user-component__text">
-              <h4 class="user-component__title user-component__title--not-bold">
-                Bob
-              </h4>
-              <!-- <h6 class="user-component__subtitle">hello world</h6> -->
+        <div class="modal">
+          <div class="user-component">
+            <div class="user-component__column">
+              <img
+                src="imgs/bob.jpg"
+                alt=""
+                class="user-component__avatar user-component__avatar--sm"
+              />
+              <div class="user-component__text">
+                <h4 class="user-component__title user-component__title--not-bold">
+                  Bob
+                </h4>
+                <h6 class="user-component__subtitle">hello world</h6>
+              </div>
             </div>
-          </div>
-          <div class="user-component__column">
+            <div class="user-component__column"></div>
+            <input class="modal__toggle" type="checkbox" id="bob"/>
+            <div class="modal__backdrop">
+              <div class="modal__content">
+                <label class="modal__close" for="bob"><i class="fas fa-times"></i></label>
+                <div class="modal__profile">
+                  <img class="modal__photo" src="imgs/bob.jpg" alt="" />
+                  <span class="modal__title">Bob</span>
+                  <span class="modal__subtitle">hello world</span>
+                  <div class="modal__columns"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="user-component">
-          <div class="user-component__column">
-            <div class="user-component__avatar user-component__avatar--default">
-              <i class="fas fa-user-alt fa-2x"></i>
+        <div class="modal">
+          <div class="user-component">
+            <div class="user-component__column">
+              <div class="user-component__avatar user-component__avatar--default">
+                <i class="fas fa-user-alt fa-2x"></i>
+              </div>
+              <div class="user-component__text">
+                <h4 class="user-component__title user-component__title--not-bold">
+                  David
+                </h4>
+                <h6 class="user-component__subtitle">work hard, play hard</h6>
+              </div>
             </div>
-            <div class="user-component__text">
-              <h4 class="user-component__title user-component__title--not-bold">
-                David
-              </h4>
-              <h6 class="user-component__subtitle">work hard, play hard</h6>
+            <div class="user-component__column"></div>
+            <input class="modal__toggle" type="checkbox" id="david"/>
+            <div class="modal__backdrop">
+              <div class="modal__content">
+                <label class="modal__close" for="david"><i class="fas fa-times"></i></label>
+                <div class="modal__profile">
+                  <div class="user-component__avatar user-component__avatar--default modal__photo">
+                    <i class="fas fa-user-alt fa-6x"></i>
+                  </div>
+                  <span class="modal__title">David</span>
+                  <span class="modal__subtitle">work hard, play hard</span>
+                  <div class="modal__columns"></div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="user-component__column">
           </div>
         </div>
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              src="imgs/james.jpg"
-              alt=""
-              class="user-component__avatar user-component__avatar--sm"
-            />
-            <div class="user-component__text">
-              <h4 class="user-component__title user-component__title--not-bold">
-                James
-              </h4>
-              <h6 class="user-component__subtitle">YOLO</h6>
+        <div class="modal">
+          <div class="user-component">
+            <div class="user-component__column">
+              <img
+                src="imgs/james.jpg"
+                alt=""
+                class="user-component__avatar user-component__avatar--sm"
+              />
+              <div class="user-component__text">
+                <h4 class="user-component__title user-component__title--not-bold">
+                  James
+                </h4>
+                <h6 class="user-component__subtitle">YOLO</h6>
+              </div>
             </div>
-          </div>
-          <div class="user-component__column">
+            <div class="user-component__column"></div>
+            <input class="modal__toggle" type="checkbox" id="james"/>
+            <div class="modal__backdrop">
+              <div class="modal__content">
+                <label class="modal__close" for="james"><i class="fas fa-times"></i></label>
+                <div class="modal__profile">
+                  <img class="modal__photo" src="imgs/james.jpg" alt="" />
+                  <span class="modal__title">James</span>
+                  <span class="modal__subtitle">YOLO</span>
+                  <div class="modal__columns"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              src="imgs/jane.jpg"
-              alt=""
-              class="user-component__avatar user-component__avatar--sm"
-            />
-            <div class="user-component__text">
-              <h4 class="user-component__title user-component__title--not-bold">
-                Jane
-              </h4>
-              <!-- <h6 class="user-component__subtitle">hello world</h6> -->
+        <div class="modal">
+          <div class="user-component">
+            <div class="user-component__column">
+              <img
+                src="imgs/jane.jpg"
+                alt=""
+                class="user-component__avatar user-component__avatar--sm"
+              />
+              <div class="user-component__text">
+                <h4 class="user-component__title user-component__title--not-bold">
+                  Jane
+                </h4>
+                <!-- <h6 class="user-component__subtitle">hello world</h6> -->
+              </div>
             </div>
-          </div>
-          <div class="user-component__column">
+            <div class="user-component__column"></div>
+            <input class="modal__toggle" type="checkbox" id="jane"/>
+            <div class="modal__backdrop">
+              <div class="modal__content">
+                <label class="modal__close" for="jane"><i class="fas fa-times"></i></label>
+                <div class="modal__profile">
+                  <img class="modal__photo" src="imgs/jane.jpg" alt="" />
+                  <span class="modal__title">Jane</span>
+                  <!-- <span class="modal__subtitle">Jane</span> -->
+                  <div class="modal__columns"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              src="imgs/IU.jpg"
-              alt=""
-              class="user-component__avatar user-component__avatar--sm"
-            />
-            <div class="user-component__text">
-              <h4 class="user-component__title user-component__title--not-bold">
-                John
-              </h4>
-              <!-- <h6 class="user-component__subtitle">hello world</h6> -->
+        <div class="modal">
+          <div class="user-component">
+            <div class="user-component__column">
+              <img
+                src="imgs/IU.jpg"
+                alt=""
+                class="user-component__avatar user-component__avatar--sm"
+              />
+              <div class="user-component__text">
+                <h4 class="user-component__title user-component__title--not-bold">
+                  John
+                </h4>
+                <h6 class="user-component__subtitle">IU♥</h6>
+              </div>
             </div>
-          </div>
-          <div class="user-component__column">
+            <div class="user-component__column"></div>
+            <input class="modal__toggle" type="checkbox" id="john"/>
+            <div class="modal__backdrop">
+              <div class="modal__content">
+                <label class="modal__close" for="john"><i class="fas fa-times"></i></label>
+                <div class="modal__profile">
+                  <img class="modal__photo" src="imgs/IU.jpg" alt="" />
+                  <span class="modal__title">John</span>
+                  <span class="modal__subtitle">IU♥</span>
+                  <div class="modal__columns"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              src="imgs/mother.jpg"
-              alt=""
-              class="user-component__avatar user-component__avatar--sm"
-            />
-            <div class="user-component__text">
-              <h4 class="user-component__title user-component__title--not-bold">
-                Mom
-              </h4>
-              <!-- <h6 class="user-component__subtitle">hello world</h6> -->
+        <div class="modal">
+          <div class="user-component">
+            <div class="user-component__column">
+              <img
+                src="imgs/mother.jpg"
+                alt=""
+                class="user-component__avatar user-component__avatar--sm"
+              />
+              <div class="user-component__text">
+                <h4 class="user-component__title user-component__title--not-bold">
+                  Mom
+                </h4>
+                <!-- <h6 class="user-component__subtitle">hello world</h6> -->
+              </div>
             </div>
-          </div>
-          <div class="user-component__column">
+            <div class="user-component__column"></div>
+            <input class="modal__toggle" type="checkbox" id="mom"/>
+            <div class="modal__backdrop">
+              <div class="modal__content">
+                <label class="modal__close" for="mom"><i class="fas fa-times"></i></label>
+                <div class="modal__profile">
+                  <img class="modal__photo" src="imgs/mother.jpg" alt="" />
+                  <span class="modal__title">Mom</span>
+                  <!-- <span class="modal__subtitle">Mom</span> -->
+                  <div class="modal__columns"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -200,7 +328,9 @@
           ></a>
         </li>
         <li class="nav__btn">
-          <a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i></a>
+          <a class="nav__link" href="find.html"
+            ><i class="fas fa-search fa-2x"></i
+          ></a>
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="more.html">
@@ -210,6 +340,9 @@
         </li>
       </ul>
     </nav>
+    <div id="no-mobile">
+      <span>Your screen is too big</span>
+    </div>
     <script
       src="https://kit.fontawesome.com/5773538324.js"
       crossorigin="anonymous"

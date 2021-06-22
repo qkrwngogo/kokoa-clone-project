@@ -12,5 +12,9 @@
 }
 .friends-screen {
   padding: 0px var(--horizontal-space);
-  height: auto%;
+  height: auto;
+}
+.friends-screen__birthdays {
+  background-color: #e2737a;
+  color: #fff;
 }

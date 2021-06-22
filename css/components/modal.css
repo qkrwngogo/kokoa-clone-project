@@ -47,7 +47,6 @@
   pointer-events: none;
   animation: fadeIn 0.3s ease-in-out;
 }
-
 .modal__content {
   background-color: #848b91;
   display: flex;

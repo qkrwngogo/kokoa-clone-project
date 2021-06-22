@@ -13,7 +13,6 @@
 @import "components/no-mobile.css";
 @import "components/modal.css";
 /* Screens */
-@import "screens/index.css";
 @import "screens/login.css";
 @import "screens/friends.css";
 @import "screens/find.css";
@@ -27,7 +26,6 @@ body {
   position: relative;
   font-family: "Open Sans", sans-serif;
   color: #2e363e;
-  
 }
 .main-screen {
   padding: 0px var(--horizontal-space);

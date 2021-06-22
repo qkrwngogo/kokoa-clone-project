@@ -1,17 +1,31 @@
-#no-mobile {
+.no-mobile {
   position: absolute;
-  z-index: 10000;
-  background-color: var(--yellow);
+  z-index: 9999999;
+  background-color: #ffd800;
+  position: fixed;
   display: flex;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   top: 0;
-  right: 0;
   justify-content: center;
   align-items: center;
-  font-size: 32px;
 }
-#no-mobile span {
+.no-mobile--friends-screen {
+  height: 100%;
+}
+.no-mobile__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.no-mobile__text i {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.no-mobile__text span {
+  margin: 10px 0;
+  font-weight: 600;
+  font-size: 40px;
 }
 @media screen and (min-width:601px) {
   .modal-content {
@@ -19,7 +33,7 @@
   }
 }
 @media screen and (max-width:600px) {
-  #no-mobile {
+  .no-mobile {
     display: none;
   }
 }

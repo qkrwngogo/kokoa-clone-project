@@ -57,7 +57,47 @@
         </div>
       </div>
       <div class="message-row">
-        <img src="imgs/mother.jpg" alt="">
+        <div class="modal">
+          <div class="user-component">
+            <div class="user-component__column">
+              <img
+                src="imgs/mother.jpg"
+                alt=""
+                class="user-component__avatar user-component__avatar--xs"
+              />
+              <div class="user-component__text">
+              </div>
+            </div>
+            <div class="user-component__column"></div>
+            <input class="modal__toggle modal__toggle--sm" type="checkbox" id="mom"/>
+            <div class="modal__backdrop">
+              <div class="modal__content">
+                <label class="modal__close" for="mom"><i class="fas fa-times"></i></label>
+                <div class="modal__profile">
+                  <img class="modal__photo" src="imgs/mother.jpg" alt="" />
+                  <div class="modal__text">
+                    <span class="modal__title">Mom</span>
+                    <!-- <span class="modal__subtitle"></span> -->
+                  </div>
+                  <div class="modal__columns">
+                    <div class="modal__column">
+                      <i class="fas fa-comment fa-2x"></i>
+                      <span>Chat</span>
+                    </div>
+                    <div class="modal__column">
+                      <i class="fas fa-phone-alt fa-2x"></i>
+                      <span>Call</span>
+                    </div>
+                    <div class="modal__column">
+                      <i class="fas fa-quote-right fa-2x"></i>
+                      <span>KokoaStory</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="message-row__content">
           <span class="message__author">Mom</span>
           <div class="message__box">

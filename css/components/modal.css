@@ -12,7 +12,10 @@
   opacity: 0;
   cursor: pointer;
 }
-
+.modal__toggle--sm {
+  width: 50px;
+  height: 50px;
+}
 .modal__toggle:checked {
   width: 100%;
   height: 100vh;
@@ -50,8 +53,8 @@
 }
 .modal__profile {
   position: fixed;
-  top: 50vh;
-  
+  width: 100%;
+  top: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,6 +65,12 @@
   border-radius: 80px;
   margin-bottom: 30px;
 }
+.modal__text {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50px;
+}
 .modal__title {
   font-size: 30px;
   color: #fff;
@@ -69,7 +78,7 @@
 .modal__subtitle {
   margin-top: 10px;
   font-size: 20px;
-  color: rgb(228, 228, 228);
+  color: #e4e4e4;
 }
 .modal__close {
   position: absolute;
@@ -79,4 +88,36 @@
   top: 30px;
   left: 30px;
   cursor: pointer;
+}
+.modal__columns {
+  display:flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 100px;
+  padding: 50px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  color: #fff;
+  box-sizing: border-box;
+}
+.modal__column {
+  width: 33%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.modal__column span {
+  margin-top: 30px;
+}
+.modal__column:first-child {
+  margin-right: auto;
+}
+.modal__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+.modal__column:last-child {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
 }

@@ -9,6 +9,8 @@
 @import "components/badge.css";
 @import "components/icon-row.css";
 @import "components/alt-screen-header.css";
+@import "components/friends-screen-row.css";
+@import "components/png-image.css";
 /* Screens */
 @import "screens/login.css";
 @import "screens/friends.css";
@@ -16,9 +18,13 @@
 @import "screens/more.css";
 @import "screens/settings.css";
 @import "screens/chat.css";
+html {
+  height: 100%;
+}
 body {
   font-family: "Open Sans", sans-serif;
   color: #2e363e;
+  height: 100%;
 }
 .main-screen {
   padding: 0px var(--horizontal-space);

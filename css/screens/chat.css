@@ -1,7 +1,7 @@
 #chat-screen {
   background-color: #abc1d1;
   margin: 30px 0;
-  height: 100%;
+  height: auto;
 }
 #chat-screen .status-bar {
   z-index: 2;
@@ -48,12 +48,11 @@
   display: flex;
   align-items: flex-end;
 }
-.message__bubble-box {
-  display:flex;
-  flex-direction: column;
+.message__box .message__info {
+  margin-bottom: 10px;
 }
-.message__bubble-box .message__bubble {
-  margin-top: 5px;
+.message__box .message__info:last-child {
+  margin-bottom: 0;
 }
 .message__bubble {
   background-color: #fff;
@@ -77,6 +76,9 @@
   width: 100%;
   margin-bottom: 25px;
   display: flex;
+}
+.message-row:last-child {
+  margin-bottom: 60px;
 }
 .message-row--own {
   justify-content: flex-end;

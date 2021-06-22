@@ -14,3 +14,11 @@
 .settings__setting-column:last-child {
   color: rgba(0, 0, 0, 0.3);
 }
+.settings__setting-column {
+  position: relative;
+}
+.settings__setting-column .badge {
+  position: absolute;
+  top: 0;
+  right: -30px;
+}

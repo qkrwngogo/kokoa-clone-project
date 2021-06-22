@@ -1,0 +1,14 @@
+.friends-screen-row {
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: var(--border);
+}
+.friends-screen-row__header {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.5);
+}
+.friends-screen-row__friends {
+  padding-bottom: 70px;
+}

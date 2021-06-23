@@ -71,6 +71,7 @@
   height: 200px;
   border-radius: 80px;
   margin-bottom: 30px;
+  margin-right: 0;
 }
 .modal__text {
   display:flex;

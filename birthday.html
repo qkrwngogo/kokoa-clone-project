@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="css/styles.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthdays - Kokoa Clone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>23:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>100%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="alt-header alt-header--birthday">
+      <div class="alt-header__column alt-header__column--birthday">
+        <a href="friends.html"><i class="fas fa-angle-left fa-3x"></i></a>
+      </div>
+      <div class="alt-header__column alt-header__column--birthday">
+        <h1 class="alt-header__title alt-header__title--birthday">Friends with Birthdays</h1>
+      </div>
+    </header>
+    <main class="friends-screen">
+      <!-- Friends -->
+      <div class="friends-screen-row friends-screen-row__friends friends-screen-row--birthday">
+        <div class="friends-screen-row__header friends-screen-row__header--birthday">
+          <span>Upcoming Birthdays</span>
+        </div>
+        <div class="birthday__birthdate">June 21</div>
+        <div class="modal">
+          <div class="user-component">
+            <div class="user-component__column">
+              <img
+                src="imgs/james.jpg"
+                alt=""
+                class="user-component__avatar user-component__avatar--sm"
+              />
+              <div class="user-component__text">
+                <h4 class="user-component__title user-component__title--not-bold">
+                  James
+                </h4>
+                <h6 class="user-component__subtitle">YOLO</h6>
+              </div>
+            </div>
+            <a href="https://gift.kakao.com/home" class="friends-screen__column-box friends-screen__column-box--present">
+              Gift Shop <i class="fas fa-gift"></i>
+            </a>
+            <input class="modal__toggle" type="checkbox" id="james"/>
+            <div class="modal__backdrop">
+              <div class="modal__content">
+                <label class="modal__close" for="james"><i class="fas fa-times"></i></label>
+                <div class="modal__profile">
+                  <img class="modal__photo" src="imgs/james.jpg" alt="" />
+                  <div class="modal__text">
+                    <span class="modal__title">James</span>
+                    <span class="modal__subtitle">YOLO</span>
+                  </div>
+                  <div class="modal__columns">
+                    <div class="modal__column">
+                      <i class="fas fa-comment fa-2x"></i>
+                      <span>Chat</span>
+                    </div>
+                    <div class="modal__column">
+                      <i class="fas fa-phone-alt fa-2x"></i>
+                      <span>Call</span>
+                    </div>
+                    <div class="modal__column">
+                      <i class="fas fa-quote-right fa-2x"></i>
+                      <span>KokoaStory</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="birthday__birthdate">June 23</div>
+        <div class="modal">
+          <div class="user-component">
+            <div class="user-component__column">
+              <img
+                src="imgs/IU.jpg"
+                alt=""
+                class="user-component__avatar user-component__avatar--sm"
+              />
+              <div class="user-component__text">
+                <h4 class="user-component__title user-component__title--not-bold">
+                  John
+                </h4>
+                <h6 class="user-component__subtitle">IU♥</h6>
+              </div>
+            </div>
+            <a href="https://gift.kakao.com/home" class="friends-screen__column-box friends-screen__column-box--present">
+                Gift Shop <i class="fas fa-gift"></i>
+            </a>
+            <input class="modal__toggle" type="checkbox" id="john"/>
+            <div class="modal__backdrop">
+              <div class="modal__content">
+                <label class="modal__close" for="john"><i class="fas fa-times"></i></label>
+                <div class="modal__profile">
+                  <img class="modal__photo" src="imgs/IU.jpg" alt="" />
+                  <div class="modal__text">
+                    <span class="modal__title">John</span>
+                    <span class="modal__subtitle">IU♥</span>
+                  </div>
+                  <div class="modal__columns">
+                    <div class="modal__column">
+                      <i class="fas fa-comment fa-2x"></i>
+                      <span>Chat</span>
+                    </div>
+                    <div class="modal__column">
+                      <i class="fas fa-phone-alt fa-2x"></i>
+                      <span>Call</span>
+                    </div>
+                    <div class="modal__column">
+                      <i class="fas fa-quote-right fa-2x"></i>
+                      <span>KokoaStory</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html"
+            ><i class="fas fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification badge">1</span>
+            <i class="far fa-comment fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html"
+            ><i class="fas fa-search fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <div class="nav__dot"></div>
+            <i class="fas fa-ellipsis-h fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="no-mobile no-mobile--friends-screen">
+      <div class="no-mobile__text">
+        <i class="fas fa-exclamation-triangle fa-10x"></i>
+        <span>Sorry</span>
+        <span>This device doesn't support</span>
+        <img src="imgs/no_mobile.jpg" alt="">
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/5773538324.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

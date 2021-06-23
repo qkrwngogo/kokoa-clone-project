@@ -9,12 +9,25 @@
   justify-content: space-between;
   color: rgba(0, 0, 0, 0.5);
 }
+.friends-screen-row__header--birthday {
+  font-size: 20px;
+  color: #000;
+}
 .friends-screen-row__friends {
   padding-bottom: 70px;
 }
-.friends-screen__bgm {
+.friends-screen-row--birthday {
+  border-top: none;
+}
+.friends-screen__column-box {
   border: 2px solid #06cf40;
   padding: 5px 10px;
   border-radius: 20px;
   z-index: 8;
+}
+.friends-screen__column-box--present {
+  border: 2px solid #ff5442;
+}
+.friends-screen__column-box--present i {
+  color: #ff5442;
 }

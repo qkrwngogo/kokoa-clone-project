@@ -5,12 +5,21 @@
   align-items: center;
   justify-content: center;
 }
+.alt-header--birthday {
+  justify-content: flex-start;
+}
 .alt-header__title {
   font-size: 28px;
   font-weight: 600;
 }
+.alt-header__title--birthday {
+  font-size: 20px;
+}
 .alt-header__column {
   width: 33%;
+}
+.alt-header__column--birthday:first-child {
+  flex: 1;
 }
 .alt-header__column:first-child {
   margin-right: auto;
@@ -22,6 +31,10 @@
   margin-left: auto;
   display: flex;
   justify-content: flex-end;
+}
+.alt-header__column--birthday:last-child {
+  flex: 9;
+  justify-content: flex-start;
 }
 .alt-header__column span:last-child {
   margin-left: 20px;

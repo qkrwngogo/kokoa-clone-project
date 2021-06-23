@@ -23,7 +23,7 @@
   border: 2px solid #06cf40;
   padding: 5px 10px;
   border-radius: 20px;
-  z-index: 8;
+  z-index: 7;
 }
 .friends-screen__column-box--present {
   border: 2px solid #ff5442;
